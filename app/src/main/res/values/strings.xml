@@ -1,0 +1,10 @@
+<resources>
+    <string name="app_name">Map and Route</string>
+
+    <!-- Layout -->
+    <string name="layout_et_address_from">Откуда</string>
+    <string name="layout_et_address_to">Куда</string>
+    <string name="layout_btn_build_route">Построить маршрут</string>
+
+
+</resources>

@@ -1,0 +1,85 @@
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    tools:context="com.velychko.kyrylo.mapandroute.ui.fragments.InputAddressFragment">
+
+    <EditText
+        android:id="@+id/et_address_from"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="16dp"
+        android:layout_marginRight="16dp"
+        android:layout_marginTop="0dp"
+        android:alpha="0.8"
+        android:ems="10"
+        android:hint="@string/layout_et_address_from"
+        android:imeOptions="actionSearch"
+        android:inputType="textPersonName"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <EditText
+        android:id="@+id/et_address_to"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="16dp"
+        android:layout_marginRight="16dp"
+        android:layout_marginTop="8dp"
+        android:alpha="0.8"
+        android:ems="10"
+        android:hint="@string/layout_et_address_to"
+        android:imeOptions="actionSearch"
+        android:inputType="textPersonName"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/et_address_from" />
+
+    <Button
+        android:id="@+id/btn_build_route"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="0dp"
+        android:layout_marginRight="0dp"
+        android:layout_marginTop="8dp"
+        android:alpha="0.8"
+        android:text="@string/layout_btn_build_route"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/et_address_to" />
+
+    <Button
+        android:id="@+id/btn_clear_to"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:layout_marginBottom="2dp"
+        android:layout_marginRight="2dp"
+        android:layout_marginTop="2dp"
+        android:alpha="0.5"
+        android:background="@drawable/ic_close_black_24dp"
+        app:layout_constraintBottom_toBottomOf="@+id/et_address_to"
+        app:layout_constraintDimensionRatio="h,1:1"
+        app:layout_constraintTop_toTopOf="@+id/et_address_to"
+        app:layout_constraintVertical_bias="0.0"
+        app:layout_constraintRight_toRightOf="@+id/et_address_to" />
+
+    <Button
+        android:id="@+id/btn_clear_from"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:layout_marginBottom="2dp"
+        android:layout_marginRight="2dp"
+        android:layout_marginTop="2dp"
+        android:alpha="0.5"
+        android:background="@drawable/ic_close_black_24dp"
+        app:layout_constraintBottom_toBottomOf="@+id/et_address_from"
+        app:layout_constraintDimensionRatio="h,1:1"
+        app:layout_constraintRight_toRightOf="@+id/et_address_from"
+        app:layout_constraintTop_toTopOf="@+id/et_address_from"
+        app:layout_constraintVertical_bias="0.0" />
+</android.support.constraint.ConstraintLayout>
